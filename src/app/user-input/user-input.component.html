@@ -1,0 +1,25 @@
+<div class="center-div user-input">
+  <form #userForm="ngForm" (ngSubmit)="calculateInvestment(userForm)">
+    <div class="row">
+        <div class="subrow">
+            <label for="initialinvestment">Initial Investment</label>
+            <input type="number" placeholder="0" name="initialinvestment" [(ngModel)]="investment.initialinvestment">
+        </div>
+        <div class="subrow">
+            <label for="AnnualInvestment">Annual Investment</label>
+            <input type="number" placeholder="0" name="AnnualInvestment" [(ngModel)]="investment.AnnualInvestment">
+        </div>
+    </div>
+    <div class="row">
+        <div class="subrow">
+            <label for="expectedreturn">expected return</label>
+            <input type="number" placeholder="0" name="expectedreturn" [(ngModel)]="investment.expectedreturn">
+        </div>
+        <div class="subrow">
+            <label for="duration">duration</label>
+            <input type="number" placeholder="0" name="duration" [(ngModel)]="investment.duration">
+        </div>
+    </div>
+    <button type="submit" [disabled]="!userForm.valid">CALCULATE</button>
+  </form>
+</div>

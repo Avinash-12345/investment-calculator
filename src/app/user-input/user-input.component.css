@@ -1,0 +1,41 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #246f59;
+}
+.subrow {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
+    width: 300px;
+}
+.subrow label{
+    margin-bottom: 10px;
+}
+.subrow label{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.subrow input {
+    height: 30px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid white;
+    text-indent: 5px;
+    background-color: #246f59;
+    color: white;
+}
+.subrow input::placeholder{
+    color: white;
+}
+.user-input button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px 13px;
+    width: 100%;
+    background-color: #72e2b3;
+    font-weight: bold;
+}

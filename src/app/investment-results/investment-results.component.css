@@ -1,0 +1,16 @@
+.investment {
+    width: 48%;
+}
+.investment table {
+    border: none;
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+}
+.investment thead {
+    color: #246f59;
+}
+.investment tbody td {
+    color: rgb(236, 232, 232);
+    padding: 15px;
+}
